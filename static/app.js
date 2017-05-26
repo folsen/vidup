@@ -30,7 +30,6 @@ function upload(file){
         xhr.upload.addEventListener("progress", function(evt) {
           if (evt.lengthComputable) {
             var percentComplete = evt.loaded / evt.total;
-            console.log(percentComplete);
             $('#uploading-msg .percent').html(Math.round(percentComplete * 100) + "%");
           }
        }, false);
