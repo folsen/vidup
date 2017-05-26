@@ -1,0 +1,57 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #E8E9EC;
+}
+
+#upload-area {
+  cursor: pointer;
+  background: white;
+  border: 2px dashed #0087F7;
+  border-radius: 5px;
+  width: 70%;
+  height: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+#upload-area.is-dragover {
+  background-color: grey;
+}
+
+table {
+  width: 100%;
+  height: 100%;
+}
+.box-icon {
+  width: 100%;
+  height: 80px;
+  fill: #92b0b3;
+  display: block;
+  margin-bottom: 40px;
+}
+span {
+  color: #92b0b3;
+  font-weight: bold;
+  font-size: 24px;
+}
+td {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+#vidup { margin: auto; }
+
+.video-js .vjs-big-play-button {
+  top: 45%;
+  left: 44%;
+}
+
+#uploading-msg .percent {
+  font-size: 48px;
+  margin:10px;
+  display:block;
+}

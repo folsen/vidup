@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vidup - Play</title>
+    <link href="/assets/video-js.min.css" rel="stylesheet">
+    <link href="/assets/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <table>
+      <tr><td>
+        <video id="vidup" class="video-js" width="720" controls preload="auto" data-setup="{}">
+          <source src="/files/{{video}}.mp4" type='video/mp4'>
+          <p class="vjs-no-js">
+            To view this video please enable JavaScript, and consider upgrading to a web browser that
+            <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+          </p>
+        </video>
+        <script type="text/javascript" src="/assets/video.min.js"></script>
+      </td></tr>
+    </table>
+  </body>
+</html>
