@@ -31,7 +31,7 @@ function upload(file){
           if (evt.lengthComputable) {
             var percentComplete = evt.loaded / evt.total;
             console.log(percentComplete);
-            $('#uploading-msg percent').html(Math.round(percentComplete * 100) + "%");
+            $('#uploading-msg .percent').html(Math.round(percentComplete * 100) + "%");
           }
        }, false);
        xhr.upload.addEventListener("load", function(evt) {
