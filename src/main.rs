@@ -56,6 +56,16 @@ fn upload(data: Data) -> Result<String, Failure> {
                          .arg("128k")
                          .arg(format!("files/{}.mp4", s))
                          .output();
+    Command::new("ffmpeg")
+        .arg("-i")
+        .arg(format!("files/{}.mp4", s))
+        .arg("-vframes")
+        .arg("1")
+        .arg("-q:v")
+        .arg("2")
+        .arg(format!("files/{}.jpg", s))
+        .output()
+        .unwrap();
     match output {
         Ok(out) =>  {
             if out.status.success() {
