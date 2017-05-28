@@ -45,11 +45,6 @@ td {
 }
 #vidup { margin: auto; }
 
-.video-js .vjs-big-play-button {
-  top: 45%;
-  left: 44%;
-}
-
 #uploading-msg .percent {
   font-size: 48px;
   margin:10px;
