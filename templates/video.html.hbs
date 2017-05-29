@@ -11,7 +11,18 @@
     <link rel="icon" type="image/png" href="/assets/favicon-128.png" sizes="128x128" />
     <link rel="icon" type="image/png" href="/assets/favicon.ico" />
 
+    <meta property="og:url"                content="http://vidup.xyz/{{video}}" />
+    <meta property="og:type"               content="video" />
+    <meta property="og:title"              content="Video Clip Shared On Vidup" />
+    <meta property="og:image"              content="http://vidup.xyz/files/{{video}}.jpg" />
+    <meta property="og:video"              content="http://vidup.xyz/files/{{video}}.mp4" />
+    <meta property="og:video:type"         content="video/mp4" />
+    <meta property="og:video:width"        content="{{width}}" />
+    <meta property="og:video:height"       content="{{height}}" />
+
     <link href="/assets/app.css" rel="stylesheet">
+    <link href="/assets/fluidplayer.min.css" rel="stylesheet">
+    <script type="text/javascript" src="/assets/fluidplayer.min.js"></script>
   </head>
   <body>
     <table>
@@ -19,6 +30,8 @@
         <video id="vidup" width="720" controls preload="auto" poster="/files/{{video}}.jpg">
           <source src="/files/{{video}}.mp4" type='video/mp4'>
         </video>
+
+        <script type="text/javascript"> fluidPlayer('vidup'); </script>
       </td></tr>
     </table>
   </body>
