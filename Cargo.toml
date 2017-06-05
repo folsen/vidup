@@ -5,7 +5,6 @@ authors = ["Fredrik <ique@3h.se>"]
 
 [dependencies]
 rand = "0.3"
-regex = "0.2"
 image = "0.13"
 rocket = "0.2.6"
 rocket_codegen = "0.2.6"
